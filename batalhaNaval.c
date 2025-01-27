@@ -36,5 +36,24 @@ int main() {
     // 1 1 1 1 1
     // 0 0 1 0 0
 
+        int tabuleiro[5][5] = {1, 2, 3, 4, 5,
+                            6, 7, 8, 9, 10,
+                            11, 12, 13, 14, 15,
+                            16, 17, 18, 19, 20,
+                            21, 22, 23, 24, 25};
+    // navio horizontal
+    int xHorizontal = 0;
+    int yHorizontal = 0;
+    // navio vertical
+    int xVertical = 3;
+    int yVertical = 0;
+    
+    // posicionando navio horizontal
+    tabuleiro[xHorizontal][yHorizontal] = 2;
+    printf("Parte do navio horizontal posicionado na casa [%d][%d]\n", xHorizontal, yHorizontal);
+    // posicionando navio vertical
+    tabuleiro[xVertical][yVertical] = 2;
+    printf("Parte do navio vertical posicionado na casa [%d][%d]\n", xVertical, yVertical);
+
     return 0;
 }
